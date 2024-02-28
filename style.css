@@ -2,9 +2,26 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
 }
 .termek{
     border: 1px solid black;
     padding: 10px;
+}
+
+
+#tablazatos {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 33.33%;
 }

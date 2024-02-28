@@ -1,5 +1,6 @@
-/* Cipő nyilvántatás
+/* Cipő nyilvántartás
 típusa, színe, mérete, ára */
+
 export const CIPOLISTA = [
     {
         tipus:"Nike",
@@ -12,7 +13,7 @@ export const CIPOLISTA = [
         meret:[42,46],
         ar:44000
     },{
-        tipus:"körömcipő",
+        tipus:"Körömcipő",
         szin:"piros",
         meret:[38,39,40,41],
         ar:14000
@@ -23,7 +24,7 @@ export const CIPOLISTA = [
 
 /* CIPOLISTA[0]={nev:"Géza",kor:12}
 CIPOLISTA.push({tipus:"új cipő"})
- */
+*/
 
 
 /* console.log(CIPOLISTA[1].ar)

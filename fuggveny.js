@@ -26,10 +26,11 @@ export function divek(lista){
     return szoveg
 }
 
-function tablazat(lista){
+export function tablazat(lista){
     let tartalom="<div id=tablazatos>"
+    tartalom+= `<th>Típus</tr><tr>Szín</tr><tr>Ár</th>`
     for (let i = 0; i < lista.length; i++){
-        tartalom+= `<table><tr><h3> ${lista[i].tipus} </h3><p> ${lista[i].szin}</p><p> ${lista[i].ar}</p> <tr></table>`
+        tartalom+= `<table><tr> <td>${lista[i].tipus}</td> <td>${lista[i].szin}</td> <td>${lista[i].ar}</td> <tr></table>`
     }
     tartalom += "</div>"
     console.log(tartalom)
@@ -57,7 +58,12 @@ export function legdragabb(lista){
 }
 
 ///hány körömcipő van?
-
-export function hanykc(lista){
-    
+export function hanykc(lista) {
+    let kcdb = 0;
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[i].tipus === "Körömcipő") {
+            kcdb += lista[i].meret.length;
+        }
+    }
+    return kcdb;
 }
