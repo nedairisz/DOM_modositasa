@@ -1,0 +1,10 @@
+#dives{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.termek{
+    border: 1px solid black;
+    padding: 10px;
+}
